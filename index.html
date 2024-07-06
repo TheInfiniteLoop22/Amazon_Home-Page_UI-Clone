@@ -1,0 +1,542 @@
+<!-- 
+Amazon UI Main page Clone - Tailwind CSS
+Coded By: TheInfiniteLoop22
+[ISTE WebDev - Week 2]
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon UI Clone -Eshita Garg YT</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="bg-[#0F1111] text-white h-[60px] flex justify-evenly items-center gap-x-3 text-sm ">
+            <a href="#" class="border-transparent hover:border-white border-2 p-0.5" target="_self">
+                <img src="Assets/amazon_logo.png" alt="" class="w-24 h-10 mt-2">
+            </a>
+            <div class="border-transparent hover:border-white border-2 p-1">
+                <p class="ml-5 text-xs">Deliver to</p>
+                <div class="flex items-center">
+                    <i class="fa-solid fa-location-dot scale-150 mb-3"></i>
+                    <p class="font-bold font-lg ml-2">India</p>
+                </div>
+            </div> 
+
+            <div class="flex h-11 text-black">
+                <select class="bg-[#E6E6E6] text-center px-2 rounded-lg rounded-r-none">
+                    <option>All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" class="bg-white placeholder:text-slate-700 w-[780px] pl-2 text-md">
+                <div class="bg-yellow-500 rounded-lg rounded-l-none pb-2 px-3 pt-2.5">
+                    <a href="#" target="_self">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </a>   
+                </div>
+            </div>
+
+            <div class="flex items-center gap-1 border-transparent hover:border-white border-2 p-2 py-3.5">
+                <img src="Assets/USFlag.png" alt="" class="w-6 h-4">
+                <select class="bg-transparent">
+                    <option>EN</option>
+                </select>
+            </div>
+            
+            <div class="flex flex-col border-transparent hover:border-white border-2 p-2">
+                <p class="text-xs ml-1">Hello,sign in</p>
+                <select class="bg-transparent font-bold text-md">
+                    <option>Accounts & Lists</option>
+                </select>
+            </div>
+
+            <div class="bg-transparent flex flex-col border-transparent hover:border-white border-2 p-1.5">
+                <p class="text-xs">Returns</p>
+                <p class="font-bold text-md">& Orders</p>
+            </div>
+
+            <div class="flex items-center border-transparent hover:border-white border-2 p-2.5">
+                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                <p>Cart</p>
+            </div>
+        </nav>
+        <div class="h-[40px] bg-[#222f3d] text-white flex items-center text-sm gap-x-3 font-semibold">
+            <div class="flex items-center gap-2 pl-4 border-transparent hover:border-white border-2 p-1.5">
+                <i class="fa-solid fa-bars"></i>
+                <p>All</p>
+            </div>  
+            <p class="border-transparent hover:border-white border-2 p-1.5">Today's Deals</p>
+            <p class="border-transparent hover:border-white border-2 p-1.5">Customer service</p>
+            <p class="border-transparent hover:border-white border-2 p-1.5">Registry</p>
+            <p class="border-transparent hover:border-white border-2 p-1.5">Gift Cards</p>
+            <p class="border-transparent hover:border-white border-2 p-1.5">Sell</p>
+        </div>
+    </header>
+
+    <main class="bg-slate-200 pb-4">
+        <div class="bg-banner h-80 bg-cover flex items-end justify-center mx-24">
+            <div class="bg-white text-sm flex items-center justify-center h-10 shadow-xl mb-5 mx-4 w-full">
+                <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+                <a href="#" class="underline decoration-solid decoration-[#007185] text-[#007185]  hover:decoration-orange-700 hover:text-orange-700">Click here to go to amazon.in</a></p>
+        </div>
+        </div>
+        <div class="text-black mx-24">
+            <div class="grid grid-cols-4 grid-rows-2 gap-4 px-4">
+
+                <div class="bg-white p-4">
+                    <h2 class="text-xl font-bold">Shop school essentials</h2>
+                    <img src="./Assets/Stationery.jpg" alt="" class="my-3">
+                    <a href="#" class="text-[#007185] text-xs">Explore more</a>
+                </div>
+
+                <div class="bg-white p-4">
+                    <h2 class="text-xl font-bold">Home & kitchen under $30</h2>
+                    <img src="./Assets/Pets.jpg" alt="" class="my-3">
+                    <a href="#" class="text-[#007185] text-xs">See more</a>
+                </div>   
+                
+                <div class="bg-white p-4">
+                    <h2 class="text-xl font-bold">Health & personal care</h2>
+                    <img src="./Assets/Shaving.jpg" alt=""  class="my-3">
+                    <a href="#" class="text-[#007185] text-xs">Shop Now</a>
+                </div>
+                               
+                <div class="bg-white p-4">
+                    <h2 class="text-xl font-bold">Beauty picks</h2>
+                    <img src="./Assets/Beauty.jpg" alt="" class="my-3">
+                    <a href="#" class="text-[#007185] text-xs">See more</a>
+                </div>
+                
+                <div class="bg-white p-4">
+                    <h2 class="text-xl font-bold">Electronics</h2>
+                    <img src="./Assets/Tech.jpg" alt="" class="my-3">
+                    <a href="#" class="text-[#007185] text-xs">See more on Amazon gadgets</a>
+                </div>
+                
+                <div class="bg-white p-4">
+                    <h2 class="text-xl font-bold">Toys under $30</h2>
+                    <img src="./Assets/Toys.jpg" alt="" class="my-3">
+                    <a href="#" class="text-[#007185] text-xs">See Details</a>
+                </div>
+                
+                <div class="bg-white p-4">
+                    <h2 class="text-xl font-bold">For your fitness needs</h2>
+                    <img src="./Assets/Fitness.jpg" alt="" class="my-3">
+                    <a href="#" class="text-[#007185] text-xs">See more</a>
+                </div>
+                
+                <div class="bg-white p-4">
+                    <h2 class="text-xl font-bold">Discover fashion trends</h2>
+                    <img src="./Assets/Plant.jpg" alt="" class="my-3">
+                    <a href="#" class="text-[#007185] text-xs">Shop now</a>
+                </div>
+
+
+                <div class="bg-white p-4 w-76 h-100 text-sm">
+                    <h2 class="text-xl font-bold">Level up your gaming</h2> 
+                    <div class="grid grid-cols-2 grid-rows-2 gap-2">
+                        <div>
+                            <img src="./Assets/Gaming1.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>PC Gaming</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Gaming2.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>XBox</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Gaming3.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>PlayStation</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Gaming4.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Nintendo Switch</p>
+                        </div>
+                    </div> 
+                     
+                    <a href="#" class="text-[#007185] text-xs">Shop now</a>
+                </div>
+
+                <div class="bg-white p-4 w-76 h-100 text-sm">
+                    <h2 class="text-xl font-bold">Fantastic Finds for Home</h2> 
+                    <div class="grid grid-cols-2 grid-rows-2 gap-2">
+                        <div>
+                            <img src="./Assets/Decor1.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Kitchen</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Decor2.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Home Decor</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Decor3.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Dining</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Decor4.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Smart Home</p>
+                        </div>
+                    </div> 
+                                     
+                    <a href="#" class="text-[#007185] text-xs">Shop now</a>
+                </div>
+
+                <div class="bg-white p-4 w-76 h-100 text-sm">
+                    <h2 class="text-xl font-bold">Gaming merchandise</h2> 
+                    <div class="grid grid-cols-2 grid-rows-2 gap-2">
+                        <div>
+                            <img src="./Assets/Merch1.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Apparel</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Merch2.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Hats</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Merch3.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Action Figures</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Merch4.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Mugs</p>
+                        </div>
+                    </div> 
+                     
+                    <a href="#" class="text-[#007185] text-xs">Shop the latest in gaming</a>
+                </div>
+
+                <div class="bg-white p-4 w-76 h-100 text-sm">
+                    <h2 class="text-xl font-bold">Warm & welcoming decor</h2> 
+                    <div class="grid grid-cols-2 grid-rows-2 gap-2">
+                        <div>
+                            <img src="./Assets/Aesthetic1.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Wreaths & garlands</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Aesthetic2.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Outdoor decor</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Aesthetic3.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Pillows & Throws</p>
+                        </div>
+                        <div>
+                            <img src="./Assets/Aesthetic4.jpg" alt="" class="my-3 h-40 w-18">
+                            <p>Wall art & mirrors</p>
+                        </div>
+                    </div> 
+                                     
+                    <a href="#" class="text-[#007185] text-xs">Shop more fall finds</a>
+                </div>
+                
+
+                <div class="bg-white grid place-content-center gap-2 h-36 col-span-4 border border-slate-500 rounded-lg">
+                    <p class="text-center text-sm">See personalized recommendations</p>
+                    <span class="text-xs bg-gradient-to-b from-yellow-200 to-yellow-500 border-yellow-700 border-[1px] px-24 py-1 rounded-md font-bold">Sign in</span>
+                    <p class="text-xs text-center">New customer? <a href="#" class="text-[#007185]">Start here.</a></p>
+                </div>
+            </div>
+        </div>
+    </main> 
+
+
+    <footer class="text-white text-sm">
+        <div class="bg-[#37475A] flex justify-center items-center h-12 w-full">Back to top</div>
+
+        <div class="bg-[#232f3e] h-80 flex justify-evenly pt-10 pr-28 pl-40">
+            <ul class="space-y-2">
+                <li class="text-lg font-bold">Get to Know Us</li>
+                <li class="hover:underline">Careers</li>
+                <li class="hover:underline">Blog</li>
+                <li class="hover:underline">About Amazon</li>
+                <li class="hover:underline">Investor Relations</li>
+                <li class="hover:underline">Amazon Devices</li>
+                <li class="hover:underline">Amazon Science</li>
+            </ul>
+
+            <ul class="space-y-2">
+                <li class="text-lg font-bold">Make Money with Us</li>
+                <li class="hover:underline">Sell products on Amazon</li>
+                <li class="hover:underline">Sell on Amazon Business</li>
+                <li class="hover:underline">Become an Affiliate</li>
+                <li class="hover:underline">Advertise Your Products</li>
+                <li class="hover:underline">Self-Publish with Us</li>
+                <li class="hover:underline">Host an Amazon Hub</li>
+                <li class="hover:underline">See More Make Money with Us</li>
+            </ul>
+
+            <ul class="space-y-2">
+                <li class="text-lg font-bold">Amazon Payment Products</li>
+                <li class="hover:underline">Amazon Business Card</li>
+                <li class="hover:underline">Shop with Points</li>
+                <li class="hover:underline">Reload Your Balance</li>
+                <li class="hover:underline">Amazon Currency Converter</li>
+            </ul>
+
+            <ul class="space-y-2">
+                <li class="text-lg font-bold">Let Us Help You</li>
+                <li class="hover:underline">Amazon and COVID-19</li>
+                <li class="hover:underline">Your Account</li>
+                <li class="hover:underline">About Amazon</li>
+                <li class="hover:underline">Your Orders</li>
+                <li class="hover:underline">Shipping Rates & Policies</li>
+                <li class="hover:underline">Returns & Replacements</li>
+                <li class="hover:underline">Manage Your Content and Devices</li>
+                <li class="hover:underline">Help</li>
+            </ul>
+        </div>
+
+        <div class="w-full h-px border border-t border-gray-600"></div>
+
+        <div class="bg-[#232f3e] flex justify-center items-center h-24 w-full gap-4">
+
+            <div>
+                <img src="Assets/amazon_logo.png" alt="" class="h-7 w-20 mr-16 mt-3">
+            </div>
+
+            <div class="flex items-center gap-2 border-slate-400 border p-2 rounded-sm">
+                <i class="fa-solid fa-globe"></i>
+                <select class="bg-transparent">
+                    <option>English</option>
+                </select>
+            </div>
+
+            <div class="flex items-center gap-2 border-slate-400 border p-2 rounded-sm">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <button class="bg-transparent">USD -US Dollar</button>
+            </div>
+
+            <div class="flex items-center gap-2 t border-slate-400 border p-2 rounded-sm">
+                <img src="Assets/USFlag.png" alt="" class="w-6 h-4">
+                <button class="bg-transparent">United States</button>
+            </div>
+        </div>
+
+        <div class="bg-[#131a22] w-full text-xs">
+
+            <div class="grid grid-rows-4 grid-cols-7 gap-8 mx-80 text-wrap gap-x-3 h-[30rem] py-8">
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Amazon Music</li>
+                    <li class="hover:underline">Stream millions of songs</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Amazon Ads</li>
+                    <li class="hover:underline">Reach customers wherever they spend their time</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">6pm</li>
+                    <li class="hover:underline">Score deals on fashion brands</li>
+                </ul> 
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">AbeBooks</li>
+                    <li class="hover:underline">Books, art & collectibles</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">ACX</li>
+                    <li class="hover:underline">Audiobook Publishing Made Easy</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Sell on Amazon</li>
+                    <li class="hover:underline">Start a Selling Account	</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Amazon Business</li>
+                    <li class="hover:underline">Everything For Your Business</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">AmazonGlobal</li>
+                    <li class="hover:underline">Ship Orders Internationally	</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Home Services</li>
+                    <li class="hover:underline">Experienced Pro Happiness Guarantee	</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Amazon Web Services</li>
+                    <li class="hover:underline">Scalable Cloud Computing Services</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Audible</li>
+                    <li class="hover:underline">Listen to Books & Original Audio Performances</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Box Office Mojo</li>
+                    <li class="hover:underline">Find Movie Box Office Data</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Goodreads</li>
+                    <li class="hover:underline">Book reviews & recommendations</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">IMDb</li>
+                    <li class="hover:underline">Movies, TV & Celebrities</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">IMDbPro</li>
+                    <li class="hover:underline">Get Info Entertainment Professionals Need</li>
+                </ul>
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Kindle Direct Publishing</li>
+                    <li class="hover:underline">Indie Digital & Print Publishing Made Easy</li>
+                </ul>
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Prime Video Direct</li>
+                    <li class="hover:underline">Video Distribution Made Easy</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Shopbop</li>
+                    <li class="hover:underline">Designer Fashion Brands</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Woot!</li>
+                    <li class="hover:underline">Deals and Shenanigans</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Zappos</li>
+                    <li class="hover:underline">Shoes & Clothing</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Ring</li>
+                    <li class="hover:underline">Smart Home Security Systems</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32"></ul>
+                
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">eero WiFi</li>
+                    <li class="hover:underline">Stream 4K Video in Every Room</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Blink</li>
+                    <li class="hover:underline">Smart Security for Every Home	</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Neighbors App</li>
+                    <li class="hover:underline">Real-Time Crime & Safety Alerts</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">Amazon Subscription Boxes</li>
+                    <li class="hover:underline">Top subscription boxes - right to your door</li>
+                </ul>
+
+                <ul class="space-y-1 h-20 w-32">
+                    <li class="font-semibold hover:underline">PillPack</li>
+                    <li class="hover:underline">Pharmacy Simplified</li>
+                </ul>
+            </div>
+            
+            <div class="h-[4rem] py-2">
+                <ul class="flex justify-center gap-4">
+                    <li class="hover:underline">Conditions of Use</li>
+                    <li class="hover:underline">Privacy Notice</li>
+                    <li class="hover:underline">Consumer Health Data Privacy Disclosure</li>
+                    <div class="flex gap-2 items-center">
+                        <li class="hover:underline">Your Ads Privacy Choices</li>
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                </ul>
+                <p class="text-center">© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+		
+
+
+
+
+
+		
+
+
+
+ 
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+
+ 
+ 		
+
+		
+
+
+	
+
+
+		
+
+
+		
+
+
+
+
+
+
+		
+
+
+	
+
+
+		
+
+
+	
+
+
+
+ 
+
+	
+
+
+	
+
+
+		
+
